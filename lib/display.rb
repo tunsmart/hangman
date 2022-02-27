@@ -1,7 +1,8 @@
+# frozen_string_literal: true
 
 module Display
-    def display_greetings_and_instructions
-        puts <<-HEREDOC
+  def display_greetings_and_instructions
+    puts <<-HEREDOC
             Welcome to Hangman.
             *******************
             Here are the rules...
@@ -11,18 +12,18 @@ module Display
 
             *************************************************************
 
-        HEREDOC
-    end
+    HEREDOC
+  end
 
-    def display_word
-        puts <<-HEREDOC
-            Word to guess---> #{blanked_word.join(" ")}
+  def display_word
+    puts <<-HEREDOC
+            Word to guess---> #{blanked_word.join(' ')}
            ------------------------------------------
             Wrong guesses----> #{wrong_guesses}
            ------------------------------------------
             Tries left---------> #{tries}
 
             Type 'save' at any time to save your current game for later
-        HEREDOC
-    end
+    HEREDOC
+  end
 end

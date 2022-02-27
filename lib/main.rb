@@ -10,7 +10,7 @@ def play_new_game(username)
     new_game.play
 end
 
-Display::display_greetings_and_instructions
+#Display::display_greetings_and_instructions
 puts "Type in a unique username"
 username = gets.chomp.downcase
 if Dir.children("saved_games").any?(username)
